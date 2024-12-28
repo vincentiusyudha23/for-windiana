@@ -7,7 +7,6 @@ body {
     margin: 0;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.5); /* Latar belakang biru muda */
-    background-image: url('night-2.jpg'); /* Ganti dengan URL gambar Anda */
     background-size: cover; /* Agar gambar menyesuaikan ukuran layar */
     background-position: center; /* Pusatkan gambar */
     background-repeat: no-repeat; /* Hindari pengulangan gambar */
