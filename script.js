@@ -95,7 +95,7 @@ function runTheWebsite() {
             }, speed);
 
             if (elementId == 'typing2' && i >= txt.length) {
-                document.querySelector('.gif-container').style.bottom = '15%';
+                document.querySelector('.gif-container').style.bottom = '20px';
             }
         } else if (callback) {
             callback();
