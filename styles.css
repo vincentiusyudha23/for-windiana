@@ -1,0 +1,88 @@
+*{
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang biru muda */
+    background-image: url('night-2.jpg'); /* Ganti dengan URL gambar Anda */
+    background-size: cover; /* Agar gambar menyesuaikan ukuran layar */
+    background-position: center; /* Pusatkan gambar */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(var(--start-x), var(--start-y));
+    }
+    100% {
+        transform: translate(var(--end-x), var(--end-y));
+    }
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+h3{
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.click-me{
+    position: absolute;  /* Ganti fixed menjadi absolute */
+    z-index: 3;
+    top: 50%;  /* Menempatkan tombol di tengah secara vertikal */
+    left: 50%;  /* Menempatkan tombol di tengah secara horizontal */
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.click-me>span{
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+}
+.click-me h1{
+    margin: 0;
+    padding: 0;
+}
+
