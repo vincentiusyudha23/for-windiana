@@ -1,3 +1,14 @@
+if (!localStorage.getItem('nightImage')) {
+    const img = new Image();
+    img.src = 'night-2.jpg'; // Ganti dengan URL gambar Anda
+    img.onload = () => {
+        localStorage.setItem('nightImage', img.src); // Simpan gambar di localStorage
+        document.body.style.backgroundImage = `url(${img.src})`; // Gunakan gambar dari URL
+    };
+} else {
+    // Jika gambar sudah ada di localStorage, gunakan gambar tersebut
+    document.body.style.backgroundImage = `url(${localStorage.getItem('nightImage')})`;
+}
 // Script.js
 const container = document.getElementById("container");
 
